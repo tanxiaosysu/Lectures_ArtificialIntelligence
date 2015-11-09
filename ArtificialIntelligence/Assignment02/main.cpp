@@ -110,12 +110,12 @@ void EP_HillClimbingSA() {
             successCount++;
         }
         /*
-        std::cout << (i + 1) << ": Search nodes : " << (count * 56) << ". ";
+        std::cout << (i + 1) << ": Search nodes : " << (count * 4) << ". ";
         std::cout << (flag ? ("Success, result is : ") : ("Fail, end node is : "));
         std::cout << EP << std::endl;
         */
     }
-    average = average * 56 / EP_TEST_COUNT;
+    average = average * 4 / EP_TEST_COUNT;
     successRate = ((successCount + 0.0) / EP_TEST_COUNT) * 100.0;
     std::cout << std::endl << "Hill Climbing Steepest-ascent:" << std::endl;
     std::cout << "Amount of test cases : " << EP_TEST_COUNT << std::endl
@@ -136,12 +136,12 @@ void EP_HillClimbingFC() {
             successCount++;
         }
         /*
-        std::cout << (i + 1) << ": Search nodes : " << (count * 56) << ". ";
+        std::cout << (i + 1) << ": Search nodes : " << (count * 4) << ". ";
         std::cout << (flag ? ("Success, result is : ") : ("Fail, end node is : "));
         std::cout << EP << std::endl;
         */
     }
-    average = average * 56 / EP_TEST_COUNT;
+    average = average * 4 / EP_TEST_COUNT;
     successRate = ((successCount + 0.0) / EP_TEST_COUNT) * 100.0;
     std::cout << std::endl << "Hill Climbing First-choice:" << std::endl;
     std::cout << "Amount of test cases : " << EP_TEST_COUNT << std::endl
@@ -163,7 +163,7 @@ void EP_SimulatedAnnealing() {
             successCount++;
         }
         /*
-        std::cout << (i + 1) << ": Search nodes : " << (count * 56) << ". ";
+        std::cout << (i + 1) << ": Search nodes : " << (count * 4) << ". ";
         std::cout << (flag ? ("Success, result is : ") : ("Fail, end node is : "));
         std::cout << ep << std::endl;
         */
